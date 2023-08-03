@@ -13,6 +13,7 @@ const App = () => {
         `https://api.github.com/users/${username}`,
       );
       setUserInfo(response.data);
+      console.log(response.data);
     } catch (error) {
       // console.error('Error fetching user info:', error);
       setUserInfo(null);
